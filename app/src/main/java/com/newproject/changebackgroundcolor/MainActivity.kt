@@ -3,6 +3,7 @@ package com.newproject.changebackgroundcolor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 
@@ -42,6 +43,21 @@ class MainActivity : AppCompatActivity() {
         val orange = findViewById(R.id.orange_btn) as Button
         orange.setOnClickListener{
             layout.setBackgroundResource(R.drawable.orange_background)
+        }
+
+        //making logic for the counter.
+        val increase =findViewById(R.id.increase_btn) as Button
+        val decrease =findViewById(R.id.decrease_btn) as Button
+        val print_count=findViewById(R.id.counter) as TextView
+        var count = 0
+
+        increase.setOnClickListener{
+            count +=1
+            printcount.text =count.toString()
+        }
+        decrease.setOnClickListener{
+            count -=1
+            printcount.text = count.toString()
         }
     }
 }
