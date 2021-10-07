@@ -61,8 +61,90 @@
         android:textColor="@color/white"
         android:textSize="18sp
 "
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="175dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/click_me_btn"
+        app:layout_constraintVertical_bias="0.069" />
 
+    <Button
+        android:id="@+id/yellow_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Yellow"
+        android:fontFamily="@font/bold"
+        android:textSize="20sp"
+        android:background="@drawable/color_button_bg"
+        android:textColor="@color/sky_blue"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+
+    <Button
+        android:id="@+id/blue_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/color_button_bg"
+        android:fontFamily="@font/bold"
+        android:text="Blue"
+        android:textAllCaps="false"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <Button
+        android:id="@+id/green_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/color_button_bg"
+        android:fontFamily="@font/bold"
+        android:text="Green"
+        android:textAllCaps="false"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <Button
+        android:id="@+id/black_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/color_button_bg"
+        android:fontFamily="@font/bold"
+        android:text="Black"
+        android:textAllCaps="false"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <Button
+        android:id="@+id/brown_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/color_button_bg"
+        android:fontFamily="@font/bold"
+        android:text="Brown"
+        android:textAllCaps="false"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <Button
+        android:id="@+id/orange_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/color_button_bg"
+        android:fontFamily="@font/bold"
+        android:text="Orange"
+        android:textAllCaps="false"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="335dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
