@@ -219,7 +219,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/print_count" />
+        app:layout_constraintTop_toBottomOf="@+id/counter" />
     <ImageView
         android:layout_width="50sp"
         android:layout_height="100sp"
