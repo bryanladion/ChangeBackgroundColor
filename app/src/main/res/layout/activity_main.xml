@@ -110,6 +110,7 @@
         android:textAllCaps="false"
         android:textColor="@color/sky_blue"
         android:textSize="20sp"
+
         app:layout_constraintBottom_toTopOf="@+id/orange_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview2" />
@@ -166,12 +167,44 @@
         android:fontFamily="@font/bold"
         android:text="00"
         android:textColor="@color/white"
-        android:textSize="100"
+        android:textSize="100sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.705" />
+
+    <Button
+        android:id="@+id/increase_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/color_button_bg"
+        android:fontFamily="@font/bold"
+        android:text="Increase"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
+
+    <Button
+        android:id="@+id/decrease_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/color_button_bg"
+        android:fontFamily="@font/bold"
+        android:text="Decrease"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
