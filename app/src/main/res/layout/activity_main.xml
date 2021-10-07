@@ -47,10 +47,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintHorizontal_bias="0.639"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/textview2"
@@ -59,8 +59,7 @@
         android:fontFamily="@font/bold"
         android:text="Click button to change background Color."
         android:textColor="@color/white"
-        android:textSize="18sp
-"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -68,45 +67,52 @@
         app:layout_constraintTop_toBottomOf="@+id/click_me_btn"
         app:layout_constraintVertical_bias="0.069" />
 
+
     <Button
         android:id="@+id/yellow_btn"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:text="Yellow"
-        android:fontFamily="@font/bold"
-        android:textSize="20sp"
         android:background="@drawable/color_button_bg"
-        android:textColor="@color/sky_blue"
+        android:fontFamily="@font/bold"
+        android:text="Yellow"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="241dp" />
-
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/black_btn"
+        app:layout_constraintEnd_toStartOf="@+id/blue_btn"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview2" />
 
     <Button
         android:id="@+id/blue_btn"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/color_button_bg"
         android:fontFamily="@font/bold"
         android:text="Blue"
         android:textAllCaps="false"
         android:textColor="@color/sky_blue"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="241dp" />
+        app:layout_constraintBottom_toTopOf="@+id/brown_btn"
+        app:layout_constraintEnd_toStartOf="@+id/green_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textview2" />
 
     <Button
         android:id="@+id/green_btn"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/color_button_bg"
         android:fontFamily="@font/bold"
         android:text="Green"
         android:textAllCaps="false"
         android:textColor="@color/sky_blue"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="241dp" />
+        app:layout_constraintBottom_toTopOf="@+id/orange_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview2" />
 
     <Button
         android:id="@+id/black_btn"
@@ -118,33 +124,54 @@
         android:textAllCaps="false"
         android:textColor="@color/sky_blue"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/brown_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/brown_btn"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/color_button_bg"
         android:fontFamily="@font/bold"
         android:text="Brown"
         android:textAllCaps="false"
         android:textColor="@color/sky_blue"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/orange_btn"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/orange_btn"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/color_button_bg"
         android:fontFamily="@font/bold"
         android:text="Orange"
         android:textAllCaps="false"
         android:textColor="@color/sky_blue"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/print_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="00"
+        android:textColor="@color/white"
+        android:textSize="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
