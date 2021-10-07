@@ -21,6 +21,20 @@ class MainActivity : AppCompatActivity() {
         yellow.setOnClickListener{
            layout.setBackgroundResource(R.drawable.yellow_background)
         }
+        //blue
+        val blue = findViewById(R.id.blue_btn) as Button
+        blue.setOnClickListener{
+            layout.setBackgroundResource(R.drawable.blue_background)
+        }
+        //green
+        val green =findViewById(R.id.green_btn) as Button
+        green.setOnClickListener{
+            layout.setBackgroundResource(R.drawable.green_background)
+        }
+        val black = findViewById(R.id.black_btn) as Button
+        black.setOnClickListener{
+            layout.setBackgroundResource(R.drawable.black_background)
+        }
     }
 }
 
