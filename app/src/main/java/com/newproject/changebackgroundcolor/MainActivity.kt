@@ -81,14 +81,28 @@ class MainActivity : AppCompatActivity() {
         val decrease =findViewById(R.id.decrease_btn) as Button
 
         var count = 0
+        var i = 0
         val print_count=findViewById(R.id.counter) as TextView
         increase.setOnClickListener{
             count +=1
-            print_count.text =count.toString()
+            i += 1
+            if(i>=0 && i<=9){
+                print_count.text ="0"+ count.toString()
+            }else{
+                print_count.text = count.toString()
+            }
+
+
         }
         decrease.setOnClickListener{
             count -=1
-            print_count.text = count.toString()
+            i-=1
+            if(i>=0 && i<=9){
+                print_count.text ="0"+ count.toString()
+            }else{
+                print_count.text = count.toString()
+            }
+
         }
 
 
